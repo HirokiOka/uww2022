@@ -14,8 +14,8 @@ const Organizers = () =>  {
   return  (
     <div className='p-2 m-3 border-2 border-black rounded-lg'>
       <h2 className='text-3xl underline mx-2 py-2 font-mono'>Organizers</h2>
-      <div className='rounded p-3'>
-        <table className='table-auto mx-3 border text-center '>
+      <div className='rounded p-3 mx-3'>
+        <table className='table-auto border text-center '>
           {organizersList.map((v, i) =>  (
             <tr key={i}>
               <td className='border px-3 font-bold'>{v.role}</td>
@@ -23,7 +23,7 @@ const Organizers = () =>  {
             </tr>
           ))}
         </table>
-        <p className='text-center font-mono pt-2'>E-mail: uww2022org [at] ubi.eedept.kobe-u.ac.jp</p>
+        <p className='font-mono pt-2'>E-mail: uww2022org [at] ubi.eedept.kobe-u.ac.jp</p>
       </div>
     </div>
   );
