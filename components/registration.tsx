@@ -5,7 +5,7 @@ const Registration = () => {
     <div className='p-2 m-3 border-black rounded-lg border-2'>
       <h2 className='text-3xl underline mx-4 py-1 font-mono'>Registration Fees</h2>
       <div className='rounded m-2 p-3'>
-        <p className='text-xl px-2'><span className='font-bold'>参加費</span>: TBD</p>
+        <p className='text-xl px-2'>参加費: TBD</p>
         <ul className='list-disc list-inside mx-3 p-2 rounded'>
           <li>お支払いは当日現金にてお願いします。</li>
           <li>社会人学生については一般と同じ参加費になります。</li>
