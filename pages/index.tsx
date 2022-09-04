@@ -2,6 +2,7 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import Description from "../components/description";
 import Registration from "../components/registration";
+import ImportantDates from "../components/importantDates.tsx";
 import Organizers from "../components/organizers";
 import Sponsors from "../components/sponsors";
 
@@ -14,7 +15,10 @@ const Home: NextPage = () => {
       </Head>
       <main>
         <Description />
-        <Registration />
+        <div className='grid md:grid-cols-2 sm:grid-cols-none'>
+          <Registration />
+          <ImportantDates />
+        </div>
         <Organizers />
         <Sponsors />
       </main>

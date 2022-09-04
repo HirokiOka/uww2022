@@ -23,6 +23,7 @@ const Organizers = () =>  {
             </tr>
           ))}
         </table>
+        <p className='text-center font-mono pt-2'>E-mail: uww2022org [at] ubi.eedept.kobe-u.ac.jp</p>
       </div>
     </div>
   );
