@@ -2,7 +2,7 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import Description from "../components/description";
 import Registration from "../components/registration";
-import ImportantDates from "../components/importantDates.tsx";
+import ImportantDates from "../components/importantDates";
 import Organizers from "../components/organizers";
 import Sponsors from "../components/sponsors";
 
