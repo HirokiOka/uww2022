@@ -12,7 +12,7 @@ const Organizers = () =>  {
     { "role": "ローカル", "name": "鷲野 海 (神戸大), 松井菜摘 (神戸大), 金 宏潤 (神戸大)", },
   ];
   return  (
-    <div className='p-2 m-3 border border-black'>
+    <div className='p-2 m-3 border-2 border-black rounded-lg'>
       <h2 className='text-3xl underline mx-2 py-2 font-mono'>Organizers</h2>
       <div className='rounded p-3'>
         <table className='table-auto mx-3 border text-center '>
