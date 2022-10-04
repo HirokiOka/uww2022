@@ -1,4 +1,4 @@
-const Organizers = () =>  {
+const Organizers = () => {
   const organizersList = [
     { "role": "ワークショップ委員長", "name": "塚本昌彦 (神戸大) ", },
     { "role": "ワークショップ副委員長", "name": "寺田 努 (神戸大) ", },
