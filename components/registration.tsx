@@ -14,7 +14,7 @@ const Registration = () => {
           <li>食事の有無で参加費は変わりません。</li>
           <li>参加費は1日のみの参加の場合でも減額は致しませんので、ご了承下さい。</li> 
         </ul>
-    {/* <button className="bg-black hover:bg-gray-800 text-white font-bold py-2 px-4 rounded mt-4 mx-8"><a href="http://cse.eedept.kobe-u.ac.jp/uww2021/reg/" className=''>参加登録する</a></button> */}
+        <button className="bg-black hover:bg-gray-800 text-white font-bold py-2 px-2 rounded mx-4"><a href="https://docs.google.com/forms/d/e/1FAIpQLSeyEgz-N3kK5j5tQQsNJi--f3fzvBYbtaxd7bJ6CB39xUteyA/viewform" className=''>参加登録する</a></button>
       </div>
     </div>
   );
