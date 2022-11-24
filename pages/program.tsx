@@ -1,6 +1,7 @@
-import { NextPage } from 'next'
+import * as fs from 'fs';
+import * as path from 'path';
+import { NextPage, GetStaticProps } from 'next'
 import Head from "next/head";
-import fs from 'fs';
 import { useState } from 'react';
 
 interface Props {
@@ -8,7 +9,19 @@ interface Props {
   dayTwo?: any;
 }
 
-const Program: NextPage<Props> = ({ dayOne, dayTwo }) => {
+export const getStaticProps: GetStaticProps<Props> = async () => {
+  const dayOnePath = path.join(process.cwd(), 'public', 'data', 'dayOne.json');
+  const dayTwoPath = path.join(process.cwd(), 'public', 'data', 'dayTwo.json');
+  const dayOneJSON = fs.readFileSync(dayOnePath).toString();
+  const dayTwoJSON = fs.readFileSync(dayTwoPath).toString();
+  const dayOne = JSON.parse(dayOneJSON);
+  const dayTwo = JSON.parse(dayTwoJSON);
+  return {
+    props: { dayOne, dayTwo }
+  }
+}
+
+const Program: NextPage<Props> = ({ dayOne, dayTwo }: Props) => {
   const [isDayOne, setIsDayOne] = useState(true);
   const [program, setProgram] = useState(dayOne);
 
@@ -84,13 +97,17 @@ const Program: NextPage<Props> = ({ dayOne, dayTwo }) => {
   );
 }
 
+/*
 Program.getInitialProps = async () => {
-  const dayOneJSON = fs.readFileSync("./public/data/dayOne.json").toString();
-  const dayTwoJSON = fs.readFileSync("./public/data/dayTwo.json").toString();
+  const dayOnePath = path.join(process.cwd(), 'public', 'data', 'dayOne.json');
+  const dayTwoPath = path.join(process.cwd(), 'public', 'data', 'dayTwo.json');
+  const dayOneJSON = fs.readFileSync(dayOnePath).toString();
+  const dayTwoJSON = fs.readFileSync(dayTwoPath).toString();
   const dayOne = JSON.parse(dayOneJSON);
   const dayTwo = JSON.parse(dayTwoJSON);
   return { dayOne, dayTwo };
 }
+*/
 
 
 export default Program;
