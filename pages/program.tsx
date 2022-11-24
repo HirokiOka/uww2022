@@ -1,6 +1,6 @@
 import { NextPage } from 'next'
 import Head from "next/head";
-import fs from 'fs';
+import { readFileSync } from 'fs';
 import { useState } from 'react';
 
 interface Props {
@@ -85,8 +85,10 @@ const Program: NextPage<Props> = ({ dayOne, dayTwo }) => {
 }
 
 Program.getInitialProps = async () => {
-  const dayOne = JSON.parse(fs.readFileSync("./public/data/dayOne.json"));
-  const dayTwo = JSON.parse(fs.readFileSync("./public/data/dayTwo.json"));
+  const dayOneJSON = readFileSync("./public/data/dayOne.json").toString();
+  const dayTwoJSON = readFileSync("./public/data/dayTwo.json").toString();
+  const dayOne = JSON.parse(dayOneJSON);
+  const dayTwo = JSON.parse(dayTwoJSON);
   return { dayOne, dayTwo };
 }
 
