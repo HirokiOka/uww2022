@@ -3,8 +3,12 @@ import Head from "next/head";
 import fs from 'fs';
 import { useState } from 'react';
 
+interface Props {
+  dayOne?: any;
+  dayTwo?: any;
+}
 
-const Program: NextPage = ({ dayOne, dayTwo }) => {
+const Program: NextPage<Props> = ({ dayOne, dayTwo }) => {
   const [isDayOne, setIsDayOne] = useState(true);
   const [program, setProgram] = useState(dayOne);
 
