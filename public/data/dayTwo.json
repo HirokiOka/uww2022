@@ -1,7 +1,7 @@
 [
   {
     "isSession": true,
-    "eventName": "セッション8",
+    "eventName": "セッション7: エンタテインメント",
     "startTime": "8:30",
     "endTime": "9:45",
     "chairperson": "松井 菜摘",
@@ -22,6 +22,17 @@
           {
             "name": "塚本 昌彦",
             "affiliation": "神戸大学"
+          }
+        ]
+      },
+      {
+        "name":"村上 カノ",
+        "affiliation": "京都産業大学",
+        "title": "わたあめへのプロジェクションマッピング",
+        "coauthors": [
+          {
+            "name": "瀬川 典久",
+            "affiliation": "京都産業大学"
           }
         ]
       },
@@ -111,7 +122,7 @@
   },
   {
     "isSession": true,
-    "eventName": "セッション9",
+    "eventName": "セッション8: デバイス",
     "startTime": "9:50",
     "endTime": "11:05",
     "chairperson": "岡 大貴",
@@ -124,6 +135,17 @@
           {
             "name": "瀬川典久",
             "affiliation": "京都産業大学"
+          }
+        ]
+      },
+      {
+        "name": "蔵田 直生",
+        "affiliation": "立命館大学",
+        "title": "水圧センサを用いた浴槽内溺没検出による自動排水栓の設計と実装",
+        "coauthors": [
+          {
+            "name": "村尾 和哉",
+            "affiliation": "立命館大学"
           }
         ]
       },
@@ -197,7 +219,7 @@
   },
   {
     "isSession": true,
-    "eventName": "セッション10",
+    "eventName": "セッション9: 心理・感情",
     "startTime": "11:10",
     "endTime": "12:25",
     "chairperson": "毛 昊珉",
@@ -218,6 +240,21 @@
           {
             "name": "塚本昌彦",
             "affiliation": "神戸大学"
+          }
+        ]
+      },
+      {
+        "name": "白井 希一",
+        "affiliation": "立命館大学",
+        "title": "ウェアラブル触覚刺激を用いた行動変容手法",
+        "coauthors": [
+          {
+            "name": "双見 京介",
+            "affiliation": "立命館大学"
+          },
+          {
+            "name": "村尾 和哉",
+            "affiliation": "立命館大学"
           }
         ]
       },
@@ -307,7 +344,7 @@
   },
   {
     "isSession": true,
-    "eventName": "セッション11",
+    "eventName": "セッション10: スポーツ",
     "startTime": "13:05",
     "endTime": "14:20",
     "chairperson": "鷲野 海",
@@ -320,6 +357,17 @@
           {
             "name": "瀬川 典久",
             "affiliation": "京都産業大学"
+          }
+        ]
+      },
+      {
+        "name": "岡竹 正弥",
+        "affiliation": "立命館大学",
+        "title": "フィットネス支援のための動作ログ提示手法",
+        "coauthors": [
+          {
+            "name": "村尾 和哉",
+            "affiliation": "立命館大学"
           }
         ]
       },
@@ -397,7 +445,7 @@
   },
   {
     "isSession": true,
-    "eventName": "セッション12",
+    "eventName": "セッション11: 認識2",
     "startTime": "14:25",
     "endTime": "15:50",
     "chairperson": "大西 鮎美",
@@ -410,6 +458,17 @@
           {
             "name": "瀬川典久",
             "affiliation": "京都産業大学"
+          }
+        ]
+      },
+      {
+        "name": "岩切 俊佑",
+        "affiliation": "立命館大学",
+        "title": "アクティブ音響センシングを用いた指輪型デバイスのための個人識別手法の提案",
+        "coauthors": [
+          {
+            "name": "村尾 和哉",
+            "affiliation": "立命館大学"
           }
         ]
       },
@@ -486,15 +545,26 @@
   },
   {
     "isSession": true,
-    "eventName": "セッション13",
+    "eventName": "セッション12: 一般2",
     "startTime": "15:55",
-    "endTime": "17:20",
+    "endTime": "17:10",
     "chairperson": "土田 修平",
     "presentations": [
       {
         "name": "渡邉 拓貴",
         "affiliation": "北海道大学",
-        "title": "未定",
+        "title": "ヒアラブルデバイスにおける超音波攻撃手法の基礎検討",
+        "coauthors": [
+          {
+            "name": "寺田 努",
+            "affiliation": "神戸大学"
+          }
+        ]
+      },
+      {
+        "name": "石塚 裕己",
+        "affiliation": "大阪大学大学院基礎工学研究科",
+        "title": "触覚センシングのその先",
         "coauthors": []
       },
       {
@@ -507,12 +577,6 @@
             "affiliation": "神戸大学"
           }
         ]
-      },
-      {
-        "name": "永野 光",
-        "affiliation": "神戸大学",
-        "title": "多点振動刺激を用いた位置情報提示における刺激部位問題",
-        "coauthors": []
       },
       {
         "name": "村尾 和哉",
@@ -537,7 +601,7 @@
   {
     "isSession": false,
     "eventName": "クロージング",
-    "startTime": "17:20",
-    "endTime": "17:40"
+    "startTime": "17:10",
+    "endTime": "17:30"
   }
 ]
