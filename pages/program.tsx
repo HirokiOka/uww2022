@@ -24,9 +24,11 @@ export const getStaticProps: GetStaticProps<Props> = async () => {
 const Program: NextPage<Props> = ({ dayOne, dayTwo }: Props) => {
   const [isDayOne, setIsDayOne] = useState(true);
   const [program, setProgram] = useState(dayOne);
+  const [disable, setDisable] = useState(false);
 
   function toggle() {
     setIsDayOne(!isDayOne);
+    setDisable(!disable);
     isDayOne ? setProgram(dayTwo) : setProgram(dayOne);
   }
 
@@ -49,8 +51,8 @@ const Program: NextPage<Props> = ({ dayOne, dayTwo }: Props) => {
               <p className='text-xl'>発表時間: 12分 (目安: 9分発表 + 2分質疑 + 1分転換) </p>
             </div>
             <div className='text-xl text-center md:mx-24'>
-              <button  onClick={toggle} className={isDayOne ? "m-2 p-2 text-center bg-gray-200 rounded underline" : "m-2 p-2 text-center rounded hover:bg-gray-200"}>12/23 (金)</button>
-              <button  onClick={toggle} className={isDayOne ? "m-2 p-2 text-center rounded hover:bg-gray-200" : "m-2 p-2 text-center bg-gray-200 rounded underline"}>12/24 (土)</button>
+              <button disabled={!disable} onClick={toggle} className={isDayOne ? "m-2 p-2 text-center bg-gray-200 rounded underline" : "m-2 p-2 text-center rounded hover:bg-gray-200"}>12/23 (金)</button>
+              <button disabled={disable} onClick={toggle} className={isDayOne ? "m-2 p-2 text-center rounded hover:bg-gray-200" : "m-2 p-2 text-center bg-gray-200 rounded underline"}>12/24 (土)</button>
             </div>
 
             <div>
