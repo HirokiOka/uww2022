@@ -7,29 +7,40 @@ import { useState } from 'react';
 interface Props {
   dayOne?: any;
   dayTwo?: any;
+  video?: any;
 }
 
 export const getStaticProps: GetStaticProps<Props> = async () => {
   const dayOnePath = path.join(process.cwd(), 'public', 'data', 'dayOne.json');
   const dayTwoPath = path.join(process.cwd(), 'public', 'data', 'dayTwo.json');
+  const videoPresenPath = path.join(process.cwd(), 'public', 'data', 'videoPresen.json');
   const dayOneJSON = fs.readFileSync(dayOnePath).toString();
   const dayTwoJSON = fs.readFileSync(dayTwoPath).toString();
+  const videoPresenJSON = fs.readFileSync(videoPresenPath).toString();
   const dayOne = JSON.parse(dayOneJSON);
   const dayTwo = JSON.parse(dayTwoJSON);
+  const video = JSON.parse(videoPresenJSON);
   return {
-    props: { dayOne, dayTwo }
+    props: { dayOne, dayTwo, video }
   }
 }
 
-const Program: NextPage<Props> = ({ dayOne, dayTwo }: Props) => {
-  const [isDayOne, setIsDayOne] = useState(true);
+const Program: NextPage<Props> = ({ dayOne, dayTwo, video }: Props) => {
+  const [scene, setScene] = useState('dayOne');
   const [program, setProgram] = useState(dayOne);
-  const [disable, setDisable] = useState(false);
 
-  function toggle() {
-    setIsDayOne(!isDayOne);
-    setDisable(!disable);
-    isDayOne ? setProgram(dayTwo) : setProgram(dayOne);
+  function changeScene(newScene: string) {
+    if (scene === newScene) return;
+    if (newScene === 'dayOne') {
+      setScene('dayOne');
+      setProgram(dayOne);
+    } else if (newScene === 'dayTwo') {
+      setScene('dayTwo');
+      setProgram(dayTwo);
+    } else if (newScene === 'video') {
+      setScene('video');
+      setProgram(video);
+    } 
   }
 
   return (
@@ -51,19 +62,30 @@ const Program: NextPage<Props> = ({ dayOne, dayTwo }: Props) => {
               <p className='text-xl'>発表時間: 12分 (目安: 9分発表 + 2分質疑 + 1分転換) </p>
             </div>
             <div className='text-xl text-center md:mx-24'>
-              <button disabled={!disable} onClick={toggle} className={isDayOne ? "m-2 p-2 text-center bg-gray-200 rounded underline" : "m-2 p-2 text-center rounded hover:bg-gray-200"}>12/23 (金)</button>
-              <button disabled={disable} onClick={toggle} className={isDayOne ? "m-2 p-2 text-center rounded hover:bg-gray-200" : "m-2 p-2 text-center bg-gray-200 rounded underline"}>12/24 (土)</button>
+              <button disabled={scene==='dayOne'} onClick={() => changeScene('dayOne')} className={scene === 'dayOne' ? 'm-2 p-2 text-center bg-gray-200 rounded underline' : 'm-2 p-2 text-center rounded hover:bg-gray-200'}>12/23 (金)</button>
+              <button disabled={scene==='dayTwo'} onClick={() => changeScene('dayTwo')} className={scene === 'dayTwo' ? 'm-2 p-2 text-center bg-gray-200 rounded underline' : 'm-2 p-2 text-center rounded hover:bg-gray-200'}>12/24 (土)</button>
+              <button disabled={scene==='video'} onClick={() => changeScene('video')} className={scene === 'video' ? 'm-2 p-2 text-center bg-gray-200 rounded underline' : 'm-2 p-2 text-center rounded hover:bg-gray-200'}>ビデオ発表</button>
             </div>
 
             <div>
               {Object.values(program).map((s: any, i: number) => (
                 <div className='my-4 md:mx-24 p-2 border-black rounded-lg border-2 justify-center' key={i}>
-                  <h1 className='text-xl text-center'>{s.startTime} - {s.endTime}</h1>
                   <h1 className='text-2xl font-bold text-center'>{s.eventName}</h1>
+                  {(scene !== 'video') ? (
+                    <>
+                      <h1 className='text-xl text-center'>{s.startTime} - {s.endTime}</h1>
+                    </>
+                    ) : (
+                      <></>
+                    )}
 
                   {s.isSession ? (
                     <div className='text-center m-4' key={i}>
+                    {scene !== 'video' ? (
                       <h2>座長: {s.chairperson}</h2>
+                    ) : (
+                      <></>
+                    )}
 
                       {s.presentations.map((p: any, j: number) => (
                         <ul className='list-disc list-inside m-2 p-2 rounded-lg bg-gray-100' key={j}>
@@ -98,18 +120,6 @@ const Program: NextPage<Props> = ({ dayOne, dayTwo }: Props) => {
     </>
   );
 }
-
-/*
-Program.getInitialProps = async () => {
-  const dayOnePath = path.join(process.cwd(), 'public', 'data', 'dayOne.json');
-  const dayTwoPath = path.join(process.cwd(), 'public', 'data', 'dayTwo.json');
-  const dayOneJSON = fs.readFileSync(dayOnePath).toString();
-  const dayTwoJSON = fs.readFileSync(dayTwoPath).toString();
-  const dayOne = JSON.parse(dayOneJSON);
-  const dayTwo = JSON.parse(dayTwoJSON);
-  return { dayOne, dayTwo };
-}
-*/
 
 
 export default Program;
