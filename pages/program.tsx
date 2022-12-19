@@ -3,6 +3,7 @@ import * as path from 'path';
 import { NextPage, GetStaticProps } from 'next'
 import Head from "next/head";
 import { useState } from 'react';
+import Link from 'next/link';
 
 interface Props {
   dayOne?: any;
@@ -26,6 +27,23 @@ export const getStaticProps: GetStaticProps<Props> = async () => {
 }
 
 const Program: NextPage<Props> = ({ dayOne, dayTwo, video }: Props) => {
+  const busSchedules = [
+    [
+      ['7:00', '7:48'],
+      ['7:30', '8:18'],
+      ['8:00', '8:45'],
+      ['8:30', '9:18'],
+      ['8:55', '9:45'],
+      ['9:30', '10:18'],
+    ],
+    [
+      ['17:46', '18:32'],
+      ['18:16', '19:02'],
+      ['19:16', '20:02'],
+      ['20:16', '20:58'],
+      ['21:16', '21:58'],
+    ],
+  ];
   const [scene, setScene] = useState('dayOne');
   const [program, setProgram] = useState(dayOne);
 
@@ -68,6 +86,27 @@ const Program: NextPage<Props> = ({ dayOne, dayTwo, video }: Props) => {
             </div>
 
             <div>
+              {scene === 'dayOne' ? (
+              <div className='text-center p-2 border-black rounded-lg border-2 md:mx-24'>
+                <h1 className='text-2xl font-bold'>23日行き高速バス情報</h1>
+                <div className='flex justify-center p-2 text-lg'>
+                  <table className='table-auto border text-center'>
+                    <td className='border px-3 font-bold'>三宮発</td>
+                    <td className='border px-3 font-bold'>淡路夢舞台着</td>
+                    {busSchedules[0].map((v, i) =>  (
+                      <tr key={i}>
+                        <td className='border px-3'>{v[0]}</td>
+                        <td className='border px-3'>{v[1]}</td>
+                      </tr>
+                    ))}
+                  </table>
+                </div>
+                <Link href="https://www.yumebutai.co.jp/wp/wp-content/themes/yumebutai/images/access/pdf/bus_timetable_maiko2209.pdf"><a className='hover:underline text-blue-500'>バス時刻表詳細</a></Link>
+              </div>
+              ) : (
+                <>
+                </>
+              )}
               {Object.values(program).map((s: any, i: number) => (
                 <div className='my-4 md:mx-24 p-2 border-black rounded-lg border-2 justify-center' key={i}>
                   <h1 className='text-2xl font-bold text-center'>{s.eventName}</h1>
@@ -108,11 +147,32 @@ const Program: NextPage<Props> = ({ dayOne, dayTwo, video }: Props) => {
 
                     </div>
                   ) : (
-                      <h1 key={i}></h1>
+                    <h1 key={i}></h1>
                   )}
 
                 </div>
               ))}
+              {scene === 'dayTwo' ? (
+              <div className='text-center p-2 border-black rounded-lg border-2 md:mx-24'>
+                <h1 className='text-2xl font-bold'>24日帰り高速バス情報</h1>
+                <div className='flex justify-center p-2 text-lg'>
+                  <table className='table-auto border text-center'>
+                    <td className='border px-3 font-bold'>淡路夢舞台発</td>
+                    <td className='border px-3 font-bold'>三ノ宮着</td>
+                    {busSchedules[1].map((v, i) =>  (
+                      <tr key={i}>
+                        <td className='border px-3'>{v[0]}</td>
+                        <td className='border px-3'>{v[1]}</td>
+                      </tr>
+                    ))}
+                  </table>
+                </div>
+                <Link href="https://www.yumebutai.co.jp/wp/wp-content/themes/yumebutai/images/access/pdf/bus_timetable_maiko2209.pdf"><a className='hover:underline text-blue-500'>バス時刻表詳細</a></Link>
+              </div>
+              ) : (
+                <>
+                </>
+            )}
             </div>
 
           </div>
