@@ -27,7 +27,7 @@ export const getStaticProps: GetStaticProps<Props> = async () => {
 }
 
 const Program: NextPage<Props> = ({ dayOne, dayTwo, video }: Props) => {
-  const busSchedules = [
+  const bussSchedules = [
     [
       ['7:00', '7:48'],
       ['7:30', '8:18'],
@@ -93,7 +93,7 @@ const Program: NextPage<Props> = ({ dayOne, dayTwo, video }: Props) => {
                   <table className='table-auto border text-center'>
                     <td className='border px-3 font-bold'>三宮発</td>
                     <td className='border px-3 font-bold'>淡路夢舞台着</td>
-                    {busSchedules[0].map((v, i) =>  (
+                    {bussSchedules[0].map((v, i) =>  (
                       <tr key={i}>
                         <td className='border px-3'>{v[0]}</td>
                         <td className='border px-3'>{v[1]}</td>
@@ -159,7 +159,7 @@ const Program: NextPage<Props> = ({ dayOne, dayTwo, video }: Props) => {
                   <table className='table-auto border text-center'>
                     <td className='border px-3 font-bold'>淡路夢舞台発</td>
                     <td className='border px-3 font-bold'>三ノ宮着</td>
-                    {busSchedules[1].map((v, i) =>  (
+                    {bussSchedules[1].map((v, i) =>  (
                       <tr key={i}>
                         <td className='border px-3'>{v[0]}</td>
                         <td className='border px-3'>{v[1]}</td>
