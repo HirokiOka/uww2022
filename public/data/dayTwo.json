@@ -124,7 +124,7 @@
     "isSession": true,
     "eventName": "セッション8: デバイス",
     "startTime": "9:50",
-    "endTime": "11:05",
+    "endTime": "10:50",
     "chairperson": "岡 大貴",
     "presentations": [
       {
@@ -165,21 +165,6 @@
         ]
       },
       {
-        "name": "宮嶋 佑輔",
-        "affiliation": "神戸大学",
-        "title": "炭酸飲料の刺激自動調節のための炭酸飲料中の二酸化炭素量の非接触計測手法の提案",
-        "coauthors": [
-          {
-            "name": "寺田 努",
-            "affiliation": "神戸大学"
-          },
-          {
-            "name": "塚本 昌彦",
-            "affiliation": "神戸大学"
-          }
-        ]
-      },
-      {
         "name": "秋山 幸輝",
         "affiliation": "立命館大学",
         "title": "ペルチェ素子を用いた手首体温制御デバイスにおける冷却強度と体温変化の影響調査",
@@ -214,14 +199,14 @@
   {
     "isSession": false,
     "eventName": "休憩",
-    "startTime": "11:05",
-    "endTime": "11:10"
+    "startTime": "10:50",
+    "endTime": "10:55"
   },
   {
     "isSession": true,
     "eventName": "セッション9: 心理・感情",
-    "startTime": "11:10",
-    "endTime": "12:25",
+    "startTime": "10:55",
+    "endTime": "12:10",
     "chairperson": "毛 昊珉",
     "presentations": [
       {
@@ -339,7 +324,7 @@
   {
     "isSession": false,
     "eventName": "昼食",
-    "startTime": "12:25",
+    "startTime": "12:10",
     "endTime": "13:05"
   },
   {

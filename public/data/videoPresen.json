@@ -127,6 +127,36 @@
             "affiliation": "神戸大学"
           }
         ]
+      },
+      {
+        "name": "藤田 直樹",
+        "affiliation": "神戸大学",
+        "title": "心拍数の提示により受動的に一体感を得るシステムの提案",
+        "coauthors": [
+          {
+            "name": "西田 健志",
+            "affiliation": "神戸大学"
+          },
+          {
+            "name": "寺田 努",
+            "affiliation": "神戸大学"
+          }
+        ]
+      },
+      {
+        "name": "宮嶋 佑輔",
+        "affiliation": "神戸大学",
+        "title": "炭酸飲料の刺激自動調節のための炭酸飲料中の二酸化炭素量の非接触計測手法の提案",
+        "coauthors": [
+          {
+            "name": "寺田 努",
+            "affiliation": "神戸大学"
+          },
+          {
+            "name": "塚本 昌彦",
+            "affiliation": "神戸大学"
+          }
+        ]
       }
     ]
   }

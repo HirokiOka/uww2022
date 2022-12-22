@@ -486,24 +486,9 @@
     "isSession": true,
     "eventName": "セッション5: 情報提示",
     "startTime": "16:20",
-    "endTime": "17:45",
+    "endTime": "17:35",
     "chairperson": "双見 京介",
     "presentations": [
-      {
-        "name": "藤田 直樹",
-        "affiliation": "神戸大学",
-        "title": "心拍数の提示により受動的に一体感を得るシステムの提案",
-        "coauthors": [
-          {
-            "name": "西田 健志",
-            "affiliation": "神戸大学"
-          },
-          {
-            "name": "寺田 努",
-            "affiliation": "神戸大学"
-          }
-        ]
-      },
       {
         "name": "山本 京介",
         "affiliation": "立命館大学",
@@ -607,14 +592,14 @@
   {
     "isSession": false,
     "eventName": "休憩",
-    "startTime": "17:45",
-    "endTime": "17:50"
+    "startTime": "17:35",
+    "endTime": "17:40"
   },
   {
     "isSession": true,
     "eventName": "セッション6: 一般1",
-    "startTime": "17:50",
-    "endTime": "19:15",
+    "startTime": "17:40",
+    "endTime": "18:55",
     "chairperson": "渡邉 拓貴",
     "presentations": [
       {
@@ -682,17 +667,6 @@
         "coauthors": []
       },
       {
-        "name": "瀬川 典久",
-        "affiliation": "京都産業大学",
-        "title": "日本式ジャガード織りを活用したe-テキスタイルによるセンサノードの開発",
-        "coauthors": [
-          {
-            "name": "上田 香",
-            "affiliation": "嵯峨美術大学"
-          }
-        ]
-      },
-      {
         "name": "寺田 努",
         "affiliation": "神戸大学",
         "title": "ウェアラブルセンシングとELSI",
@@ -703,7 +677,7 @@
   {
     "isSession": false,
     "eventName": "諸連絡+部屋鍵受取り",
-    "startTime": "19:15",
+    "startTime": "18:55",
     "endTime": "19:30"
   },
   {
