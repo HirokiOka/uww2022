@@ -231,11 +231,11 @@
       {
         "name": "白井 希一",
         "affiliation": "立命館大学",
-        "title": "ウェアラブル触覚刺激を用いた行動変容手法",
+        "title": "ウェアラブル機器の触覚刺激を用いた行動変容手法の提案",
         "coauthors": [
           {
             "name": "双見 京介",
-            "affiliation": "立命館大学"
+            "affiliation": "立命館大学, Digital Spirits Teck"
           },
           {
             "name": "村尾 和哉",
@@ -273,7 +273,7 @@
         "coauthors": [
           {
             "name": "双見 京介",
-            "affiliation": "立命館大学"
+            "affiliation": "立命館大学, Digital Spirits Teck"
           },
           {
             "name": "村尾 和哉",
@@ -348,8 +348,12 @@
       {
         "name": "岡竹 正弥",
         "affiliation": "立命館大学",
-        "title": "フィットネス支援のための動作ログ提示手法",
+        "title": "ボクシングエクササイズ支援のための目標値フィードバック手法の検討",
         "coauthors": [
+          {
+            "name": "双見 京介",
+            "affiliation": "立命館大学, Digital Spirits Teck"
+          },
           {
             "name": "村尾 和哉",
             "affiliation": "立命館大学"
@@ -393,7 +397,7 @@
         "coauthors": [
           {
             "name": "双見 京介",
-            "affiliation": "立命館大学"
+            "affiliation": "立命館大学, Digital Spirits Teck"
           },
           {
             "name": "村尾 和哉",

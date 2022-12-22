@@ -323,11 +323,11 @@
       {
         "name": "小川 諒馬",
         "affiliation": "立命館大学",
-        "title": "ウェアラブル環境の状況ごとの負荷を考慮して入力インタフェースを切り替えるための事前調査",
+        "title": "アイウェアのハンズフリー入力手法における状況ごとの有効性の調査",
         "coauthors": [
           {
             "name": "双見 京介",
-            "affiliation": "立命館大学"
+            "affiliation": "立命館大学, Digital Spirits Teck"
           },
           {
             "name": "村尾和哉",
@@ -342,7 +342,7 @@
         "coauthors": [
           {
             "name": "双見 京介",
-            "affiliation": "立命館大学"
+            "affiliation": "立命館大学, Digital Spirits Teck"
           },
           {
             "name": "村尾 和哉",
@@ -409,11 +409,11 @@
       {
         "name": "八木田 裕伍",
         "affiliation": "立命館大学",
-        "title": "リフレクション支援のためのライフログシステム",
+        "title": "スポーツにおけるリフレクション支援のためのライフログシステムの検討",
         "coauthors": [
           {
             "name": "双見 京介",
-            "affiliation": "立命館大学"
+            "affiliation": "立命館大学, Digital Spirits Teck"
           },
           {
             "name": "村尾 和哉",
@@ -492,11 +492,11 @@
       {
         "name": "山本 京介",
         "affiliation": "立命館大学",
-        "title": "AR技術を用いた疲労制御手法",
+        "title": "認知パフォ―マンス向上のためのAR技術を用いた音源定位能力の操作手法の検討",
         "coauthors": [
           {
             "name": "双見 京介",
-            "affiliation": "立命館大学"
+            "affiliation": "立命館大学, Digital Spirits Teck"
           },
           {
             "name": "村尾 和哉",
@@ -526,11 +526,11 @@
       {
         "name": "中沢 将",
         "affiliation": "立命館大学",
-        "title": "視線と鼻呼吸を連携させた入力インタフェースの設計",
+        "title": "フォトリフレクタ付きアイウェア型デバイスを用いた摂食行為認識手法",
         "coauthors": [
           {
             "name": "双見 京介",
-            "affiliation": "立命館大学"
+            "affiliation": "立命館大学, Digital Spirits Teck"
           },
           {
             "name": "村尾 和哉",
@@ -560,11 +560,11 @@
       {
         "name": "長島 眞美子",
         "affiliation": "立命館大学",
-        "title": "アイウェアを用いた目の健康状態の推定技術",
+        "title": "アイウェア機器を用いた目の健康・疾患状態の定量化手法の提案",
         "coauthors": [
           {
             "name": "双見 京介",
-            "affiliation": "立命館大学"
+            "affiliation": "立命館大学, Digital Spirits Teck"
           },
           {
             "name": "村尾 和哉",
@@ -656,8 +656,8 @@
       },
       {
         "name": "双見 京介",
-        "affiliation": "立命館大学",
-        "title": "ウェアラブル環境におけるマインド改悪手法とマインドセキュリティ技術",
+        "affiliation": "立命館大学, Digital Spirits Teck",
+        "title": "ウェアラブルマインドハック技術のダークサイド,マインドセキュリティ技術",
         "coauthors": []
       },
       {
