@@ -32,14 +32,14 @@ const Header = ()=>{
                 className: "m-3 text-xl text-right font-mono ",
                 children: [
                     /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
-                        href: "http://cse.eedept.kobe-u.ac.jp/uww2022/index.html",
+                        href: "./index.html",
                         children: /*#__PURE__*/ jsx_runtime_.jsx("a", {
                             className: "m-2 hover:underline",
                             children: "Home"
                         })
                     }),
                     /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
-                        href: "http://cse.eedept.kobe-u.ac.jp/uww2022/program.html",
+                        href: "./program.html",
                         children: /*#__PURE__*/ jsx_runtime_.jsx("a", {
                             className: "m-2 hover:underline",
                             children: "Program"
