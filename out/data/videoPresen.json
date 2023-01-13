@@ -1,0 +1,163 @@
+[
+  {
+    "isSession": true,
+    "eventName": "ビデオ発表",
+    "presentations": [
+      {
+        "name": "河野 日生",
+        "affiliation": "立命館大学",
+        "title": "CNCマシンを用いたスプラウト播種による情報提示手法の提案",
+        "coauthors": [
+          {
+            "name": "村尾 和哉",
+            "affiliation": "立命館大学"
+          }
+        ]
+      },
+      {
+        "name": "辻 凌弥",
+        "affiliation": "神戸大学",
+        "title": "振動付与・音再生・流量変化によって飲料の過剰摂取を防止するストローの提案",
+        "coauthors": [
+          {
+            "name": "大西 鮎美",
+            "affiliation": "神戸大学"
+          },
+          {
+            "name": "寺田 努",
+            "affiliation": "神戸大学"
+          },
+          {
+            "name": "塚本 昌彦",
+            "affiliation": "神戸大学"
+          }
+        ]
+      },
+      {
+        "name": "金 宏潤",
+        "affiliation": "神戸大学",
+        "title": "空手の予備動作を小さくする練習支援システムによる空手未経験者への支援効果について",
+        "coauthors": [
+          {
+            "name": "土田  修平",
+            "affiliation": "神戸大学"
+          },
+          {
+            "name": "寺田 努",
+            "affiliation": "神戸大学"
+          },
+          {
+            "name": "塚本 昌彦",
+            "affiliation": "神戸大学"
+          }
+        ]
+      },
+      {
+        "name": "引原 翼",
+        "affiliation": "神戸大学",
+        "title": "歌声を協和させる技術を習得するためのうなりを利用した練習支援システム",
+        "coauthors": [
+          {
+            "name": "大西 鮎美",
+            "affiliation": "神戸大学"
+          },
+          {
+            "name": "寺田 努",
+            "affiliation": "神戸大学"
+          },
+          {
+            "name": "塚本 昌彦",
+            "affiliation": "神戸大学"
+          }
+        ]
+      },
+      {
+        "name": "水谷 元紀",
+        "affiliation": "神戸大学",
+        "title": "野球におけるARを用いたストライク判定支援システムの提案",
+        "coauthors": [
+          {
+            "name": "土田  修平",
+            "affiliation": "神戸大学"
+          },
+          {
+            "name": "寺田 努",
+            "affiliation": "神戸大学"
+          },
+          {
+            "name": "塚本 昌彦",
+            "affiliation": "神戸大学"
+          }
+        ]
+      },
+      {
+        "name": "角田 幸太郎",
+        "affiliation": "神戸大学",
+        "title": "自発的な頷きと強制的な頷きがオンデマンド授業受講者の覚醒度に与える影響の調査",
+        "coauthors": [
+          {
+            "name": "大西 鮎美",
+            "affiliation": "神戸大学"
+          },
+          {
+            "name": "寺田 努",
+            "affiliation": "神戸大学"
+          },
+          {
+            "name": "塚本 昌彦",
+            "affiliation": "神戸大学"
+          }
+        ]
+      },
+      {
+        "name": "倉元 良輔",
+        "affiliation": "神戸大学",
+        "title": "文章中からの情報蓄積および人物相関図と時系列表示を用いた読書内容のスクラッピングによる読書支援システムの実装",
+        "coauthors": [
+          {
+            "name": "土田 修平",
+            "affiliation": "神戸大学"
+          },
+          {
+            "name": "寺田 努",
+            "affiliation": "神戸大学"
+          },
+          {
+            "name": "塚本 昌彦",
+            "affiliation": "神戸大学"
+          }
+        ]
+      },
+      {
+        "name": "藤田 直樹",
+        "affiliation": "神戸大学",
+        "title": "心拍数の提示により受動的に一体感を得るシステムの提案",
+        "coauthors": [
+          {
+            "name": "西田 健志",
+            "affiliation": "神戸大学"
+          },
+          {
+            "name": "寺田 努",
+            "affiliation": "神戸大学"
+          }
+        ]
+      },
+      {
+        "name": "宮嶋 佑輔",
+        "affiliation": "神戸大学",
+        "title": "炭酸飲料の刺激自動調節のための炭酸飲料中の二酸化炭素量の非接触計測手法の提案",
+        "coauthors": [
+          {
+            "name": "寺田 努",
+            "affiliation": "神戸大学"
+          },
+          {
+            "name": "塚本 昌彦",
+            "affiliation": "神戸大学"
+          }
+        ]
+      }
+    ]
+  }
+]
