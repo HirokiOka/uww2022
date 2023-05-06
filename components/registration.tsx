@@ -3,7 +3,7 @@ import Link from 'next/link';
 const Registration = () => {
   return (
     <div className='p-2 m-3 border-black rounded-lg border-2'>
-      <h2 className='text-3xl underline mx-4 py-1 font-mono'>Registration Fees</h2>
+      <h2 className='text-3xl underline mx-4 py-1'>Registration Fees</h2>
       <div className='rounded m-2 p-3'>
         <p className='text-xl px-2'>参加費</p>
         <p className='text-lg px-4'>一般: 20,000円 (会議参加費8,000円、宿泊費12,000円)</p>

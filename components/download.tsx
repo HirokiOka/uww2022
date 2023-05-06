@@ -1,7 +1,7 @@
 const Download = () => {
   return (
     <div className='p-2 m-3 rounded-lg border-2 border-black'>
-      <h2 className='text-3xl underline mx-4 font-mono'>Download</h2>
+      <h2 className='text-3xl underline mx-4'>Download</h2>
       <div className='rounded  m-2 p-2'>
         <div className='text-center inline-flex'> 
          <h3 className='text-xl mx-auto'>原稿テンプレート：</h3>

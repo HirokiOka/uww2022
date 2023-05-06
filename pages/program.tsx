@@ -101,7 +101,7 @@ const Program: NextPage<Props> = ({ dayOne, dayTwo, video }: Props) => {
                     ))}
                   </table>
                 </div>
-                <Link href="https://www.yumebutai.co.jp/wp/wp-content/themes/yumebutai/images/access/pdf/bus_timetable_maiko2209.pdf"><a className='hover:underline text-blue-500'>バス時刻表詳細</a></Link>
+                <Link href="https://www.yumebutai.co.jp/wp/wp-content/themes/yumebutai/images/access/pdf/bus_timetable_maiko2209.pdf" className='hover:underline text-blue-500'>バス時刻表詳細</Link>
               </div>
               ) : (
                 <>
@@ -167,7 +167,7 @@ const Program: NextPage<Props> = ({ dayOne, dayTwo, video }: Props) => {
                     ))}
                   </table>
                 </div>
-                <Link href="https://www.yumebutai.co.jp/wp/wp-content/themes/yumebutai/images/access/pdf/bus_timetable_maiko2209.pdf"><a className='hover:underline text-blue-500'>バス時刻表詳細</a></Link>
+                <Link href="https://www.yumebutai.co.jp/wp/wp-content/themes/yumebutai/images/access/pdf/bus_timetable_maiko2209.pdf" className='hover:underline text-blue-500'>バス時刻表詳細</Link>
               </div>
               ) : (
                 <>

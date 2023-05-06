@@ -1,7 +1,7 @@
 const Sponsors = () => {
   return (
     <div className='p-2 m-3 border-2 border-black rounded-lg'>
-      <h1 className='text-3xl underline mx-2 font-mono'>Sponsors</h1>
+      <h1 className='text-3xl underline mx-2'>Sponsors</h1>
       <div className='grid grid-cols-2'>
         <div className='text-center rounded p-3 m-2'>
           <h2 className='text-xl font-bold pb-4'>神戸大学大学院工学研究科 塚本・寺田研究室</h2>

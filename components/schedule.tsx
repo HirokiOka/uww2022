@@ -13,7 +13,7 @@ const Schedule = () => {
   ];
   return (
     <div className='p-2 m-3 border-2 border-black rounded-lg'>
-      <h2 className='text-3xl underline mx-2 py-2 font-mono'>Schedule</h2>
+      <h2 className='text-3xl underline mx-2 py-2'>Schedule</h2>
       <p className='text-xl px-2 font-bold'>12/23 (金)</p>
       <div className='rounded pb-3 mx-3'>
         <table className='table-auto border text-center'>
