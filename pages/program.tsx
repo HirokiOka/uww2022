@@ -69,7 +69,7 @@ const Program: NextPage<Props> = ({ dayOne, dayTwo, video }: Props) => {
       </Head>
       <body>
         <div className='contents'>
-          <h1 className='pt-16 text-4xl underline text-center pb-2 font-mono'>Program</h1>
+          <h1 className='pt-16 text-4xl underline text-center pb-2'>Program</h1>
             <div className='p-2 text-center md:mx-48 rounded'>
               <table className='m-auto'>
                 <tr>
